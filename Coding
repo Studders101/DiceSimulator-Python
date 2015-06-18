@@ -1,0 +1,31 @@
+# DiceSimulator-Python
+#So ive started to learn python for about a day now and this is my first attempt at it. (Learnt basics at codecademy.com )
+
+
+#Jon_Studders-Simulating_A_Dice. 17th_June_2015.
+#from random import randint This is a function i just imported to give myself a random variable
+#print "Welcome To Automatic Dice Roller - By Jon Studders." Credit
+#while True: Loop
+    #rollDice=int(raw_input("How many sides would you like you're dice to have 4,6,12?" )) Asks for loop
+    #diceValue=randint(1, rollDice)
+    #print "You Rolled A", rollDice, "Sided Dice. The Score Is", diceValue This gives you a random number:)
+
+#Second Attempt with more variables :) (Went on codecademy for some basic stings)
+
+from random import randint #This is a function for a random number
+print "Welcome To Automatic Dice Roller v1.1 - By Jon Studders." #Credits
+while True: #Loop
+    dice = randint(1,4) #Creates a number for 4 sides
+    dice2 = randint(1,6) #Creates a number for 6 sides
+    dice3 = randint(1,12) #Creates a number for 12 sides
+    sides = int(input("Input number 4, 6, 12 or press 0 to exit the simulator>> ")) #Asks for a number of sides you want on a dice or wether you want to close the simulation.
+    if sides == 0:
+        exit(0)  #Gives the option the close down the window
+    elif sides == 4 :
+        print("You Rolled A 4 Sided Dice,Your number is", dice) #Gives you a number 1-4
+    elif sides == 6 :
+        print("You Rolled A 6 Sided Dice,Your number is", dice2) #Gives you a number 1-6
+    elif sides == 12:
+        print("You Rolled A 12 Sided Dice,Your number is", dice3) #Gives you a number 1-12
+    else:
+        print("Please input a number 4, 6,  12 or press 0 to close the simulation.") #If you input anything but 4,6,12 you will be told to put a number 4 6 or 12. 
